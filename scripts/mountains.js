@@ -11,6 +11,7 @@ mountainList.addEventListener("change", e=>{
     const mountain = mountainsArray[mountainList.selectedIndex - 1];
     mountainResults.innerHTML = `
     <h3>${mountain.name}</h3>
+    <br>
     Elevation: ${mountain.elevation} feet <br>
     Effort: ${mountain.effort}<br>
     Lattitude/Longitude: (${mountaincoords.lat}, ${mountain.coords.lng})
