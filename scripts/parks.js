@@ -1,10 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () =>{
-function option(text){
-    const o = document.createElement("option");
-    o.innerText = text; 
-    return o;
-}
+
 function getPark(park){
     const element = document.createElement("div");
     element.classList.add("park");
