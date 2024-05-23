@@ -5,23 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parks</title>
     <link rel="stylesheet" href="./styles/main.css">
-
+    <link rel="stylesheet" href="./styles/parks.css">
     <script src="./scripts/main.js"></script>
     <script src="./scripts/nationalParkData.js"></script>
     <script src="./scripts/parks.js"></script>
     <script src="./scripts/locationData.js"></script>
     <script src = "./scripts/parkTypeData.js"></script>
+
 </head>
 <body>
+    <header>
+        <div class="navbar">
+          <img class="logo" alt="logo" src="./images/logoreal.gif">
+  
+          <h1>Touch Grass</h1>
+          <nav>
+          
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" a href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" a href="mountains.html">Mountain</a>
+            </ul>
+          </nav>
+        </div>
+  
+      </header>
     <h1>Parks</h1>
     <h2>Search by:</h2>
-    <label><input type="radio" id="locationsRadio" name="searchBy" checked>Location(State)</label>
-    <br>
-    <label><input type="radio" id="parkTypeRadio" name="searchBy">PPark Type</label>
+    <label class="inputs"><input type="radio" id="locationsRadio" name="searchBy" checked>Location(State)</label>
+    
+    <label class="inputs"><input type="radio" id="parkTypeRadio" name="searchBy">Park Type</label>
     <div class="filters">
-        <label id="locationLabel">Location: <select id="locations" name="location" ></select></label>
+        <label id="locationLabel" class="inputs ">Location: <select id="locations" name="location" ></select></label>
 
-        <label id="parkTypeLabel">Park Type: <select name="parkType" id="parkType"></select></label>
+        <label id="parkTypeLabel" class="inputs">Park Type: <select name="parkType" id="parkType"></select></label>
     </div>
     <div id="results">?</div>
 </body>

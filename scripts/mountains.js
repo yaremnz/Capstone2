@@ -39,19 +39,33 @@ mountainList.addEventListener("change", async e=>{
     const mountain = mountainsArray[mountainList.selectedIndex - 1];
     const sunData = await getSunsetForMountain(mountain.coords.lat, mountain.coords.lng);
 
-
 mountainResults.innerHTML = `
-    <h3>${mountain.name}</h3>
+    <h1>${mountain.name}</h1>
     <br>
-    Elevation: ${mountain.elevation} feet <br>
-    Effort: ${mountain.effort}<br>
-    Lattitude/Longitude: (${mountain.coords.lat}, ${mountain.coords.lng})
-    sunraise: ${sunData.results.sunrise} <br>
-    sunset: ${sunData.results.sunset} <br>
+    <img src="./images/${mountain.img}"><br>
+    <table>
+    <tr><th> Elevation:</th><td> ${mountain.elevation} feet </td></tr>
+    <tr><th> Effort:   </th><td> ${mountain.effort} </td></tr>
+    <tr><th> Lattitude:</th><td> ${mountain.coords.lng} </td></tr>
+    <tr><th> Longitude:</th><td> ${mountain.coords.lat}</td></tr>
+    <tr><th> Sunraise: </th><td>${sunData.results.sunrise}</td></tr>
+    <tr><th> Sunset: </th><td>${sunData.results.sunset} </td></tr>
+    
+    </table>
+    <br><br>
+<p> ${mountain.desc} </p>
+`;
 
-    <p>${mountain.desc}</p>
-    <img src="./images/${mountain.img}">
-    `;;
+    // Elevation: ${mountain.elevation} feet <br>
+
+    // Effort: ${mountain.effort}<br>
+    // Lattitude/Longitude: (${mountain.coords.lat}, ${mountain.coords.lng})
+    // sunraise: $ <br>
+    // 
+
+    // <p>${mountain.desc}</p>
+    
+    // `;;
 });
 
 // mountainsArray.forEach(m => mountainList.appendChild(option(m.name)));

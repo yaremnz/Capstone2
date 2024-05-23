@@ -1,0 +1,23 @@
+
+#results {
+    color: cyan;
+    /* text-align: center; */
+   
+}
+.parksOpRe{
+    text-align: center;
+    color: rgb(51, 255, 255);
+    justify-content: space-around;
+    background: transparent;
+    border: 2px solid rgba(219, 20, 176, 0.2);
+    backdrop-filter: blur(15px);
+    margin: auto;
+    width: 25%;
+}
+.inputs{
+    color: lime;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    /* text-align: center; */
+}

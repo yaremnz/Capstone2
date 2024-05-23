@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", () =>{
 function getPark(park){
     const element = document.createElement("div");
     element.classList.add("park");
+    element.className = "parksOpRe";
     element.innerHTML = `
-        <hr>
-        <h3>${park.LocationName}</h3>
-        <h4>${park.LocationID}</h4>
+    
+        <h3>${park.LocationName} (${park.LocationID})</h3>
+        <h4></h4>
         <h4>${park.Address} , ${park.State} ${park.ZipCode}</h4>
 
     `;

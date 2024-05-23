@@ -1,0 +1,35 @@
+
+#mountainResults{
+    text-align: center;
+    color: rgb(51, 255, 255);
+    -webkit-text-stroke: 0.5px black;
+    background: transparent;
+    border: 2px solid rgba(219, 20, 176, 0.2);
+    backdrop-filter: blur(20px);
+    margin: auto;
+    width: 40%;
+    text-shadow: 1px 1px 5px rgb(78, 116, 116);
+}
+h1{
+    font-size: 15px;
+}
+td{
+ font-weight: bold;
+ display: inline-block;
+ vertical-align: top;
+ 
+ 
+}
+
+p {
+    font-size: 30px;
+    background-color: aqua;
+}
+img{
+    float: left;
+    margin-left: 60px;
+}
+.toppg{
+    font-size: 30px;
+    text-align: center;
+}
