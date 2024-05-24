@@ -8,6 +8,7 @@
 	left:0%;
   background-size: cover;
   background: transparent;
+  z-index: -100;
 }
 
 .loader {

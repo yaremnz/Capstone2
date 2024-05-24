@@ -1,23 +1,36 @@
 
-#results {
-    color: cyan;
-    /* text-align: center; */
-   
-}
 .parksOpRe{
     text-align: center;
     color: rgb(51, 255, 255);
     justify-content: space-around;
     background: transparent;
     border: 2px solid rgba(219, 20, 176, 0.2);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(35px);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: auto;
     width: 25%;
+    text-shadow: 1px 1px 5px rgb(89, 109, 110);
+    margin-bottom: 10px;
 }
 .inputs{
-    color: lime;
+    padding: 20px;
+    /* font-size: 60px; */
+}
+.inputs, .filters{
+    color: rgb(8, 167, 167);
+    justify-content: center;
     font-size: 30px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: whitesmoke;
-    /* text-align: center; */
+    
+}
+#topofpage, h1{
+    text-align: center;
+    color: cyan;
+    /* text-shadow: 2px 2px 5px black; */
+    text-shadow: 1px 1px 5px rgb(173, 226, 247);
+    margin-top: 15px;
+}
+.selecting, .inputs{
+    font-size: 40px;
+    color: rgb(20, 46, 53);
 }
